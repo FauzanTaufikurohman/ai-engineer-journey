@@ -14,9 +14,12 @@ def clarify_scores(scores):
     else:
         return "Poor"
 def get_passed_students(students):
+    passed_students = []
     for student in students:
         if student["score"] >= 80:
-            print(f"{student['name']} has passed with a score of {student['score']}.")
+            passed_students.append(student)
+    return passed_students
+
 def processing_numbers(numbers, even=True):
     if even:
         return [num for num in numbers if num % 2 == 0]
@@ -99,7 +102,8 @@ elif choice == "9":
         {"name": "Citra", "score": 90},
         {"name": "Deni", "score": 45},
     ]
-    get_passed_students(students)
+    result = get_passed_students(students)
+    print(result)
     
 else:
     print("Invalid choice. Please select either 1, 2, 3, or 4.")

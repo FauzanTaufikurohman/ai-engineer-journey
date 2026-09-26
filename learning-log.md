@@ -108,15 +108,10 @@ Bonus:
 
 ### Hal yang masih sulit
 
-*
-*
-*
-
-### Hal yang sudah saya pahami
-
-*
-*
-*
+- Memahami perbedaan print() dan return()
+- Struktur kode yang lebih clean
+- Menentukan kapan perlu membuat function
+- JSON dan API belum dipelajari
 
 ---
 
